@@ -10,12 +10,14 @@ body {
 p {
     font-size: 20px;
 }
+
 img {
     width: 90%;
     height: 90%;
     margin: 20px;
     box-shadow: 10px 10px 5px #000000;
 }
+
 
 .jumbotron {
     background-color: #00ffff;
@@ -28,7 +30,7 @@ img {
     height: 100%;
     overflow: hidden;
     align-items: baseline;
-    
+
 }
 
 .col {
