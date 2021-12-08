@@ -1,4 +1,4 @@
-* { 
+* {
     margin: 0;
     padding: 0;
 }
@@ -6,6 +6,7 @@
 body {
     background-color: #00ffff;
 }
+
 p {
     font-size: 20px;
 }
@@ -20,11 +21,23 @@ img {
     background-color: #00ffff;
 }
 
-.col {
-    text-align: center;
-    position: relative;
+/* Column class */
+.row row-cols-auto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    align-items: baseline;
+    
 }
 
+.col {
+    text-align: center;
+    width: auto;
+    align-self: center;
+}
+
+/* Button shape */
 button {
     margin-bottom: 15px;
     padding: 15px 32px;
@@ -37,6 +50,7 @@ button {
     width: 50%;
 }
 
+/* Topics */
 #skateboard {
     background-color: #0099ff;
 }
@@ -49,6 +63,7 @@ button {
     background-color: #00cc99;
 }
 
+/* Button Colors */
 .first {
     background-color: #000099;
 }
