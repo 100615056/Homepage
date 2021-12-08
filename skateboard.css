@@ -10,5 +10,42 @@ p {
     background-color: #008000;
 }
 
-
+/* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
+.accordion {
+    background-color: #0099ff;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    outline: none;
+    transition: 0.4s;
 }
+
+.active, .accordion:hover {
+  background-color: #00ffff;
+}
+
+.accordion:after {
+  content: '\002B'; /* Unicode for + */
+  color: #00ffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode for - */
+}
+
+/* Inside Panel */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
