@@ -49,9 +49,24 @@ p {
   margin: 0;
 }
 
+h2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox */
 .flex-container {
-  display: flex;
   margin: 0px 18px;
+  display: flex;
+  width: 100%;
+}
+
+.flex-container > div {
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  align-self: center;
+  width: auto;
 }
 
 .instagram {
