@@ -1,0 +1,92 @@
+#nav {
+    background-color: #63034C;
+}
+
+body {
+    background-color: #c2c2f0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.jumbotron {
+    background-color: #F0F0C2;
+    color: black;
+}
+
+/* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
+.accordion {
+    background-color: #4C0080;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #2e004d;
+}
+
+.accordion:after {
+  content: '\002B'; /* Unicode for + */
+  color: #2e004d;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode for - */
+}
+
+/* Inside Panel */
+.panel {
+  background-color: #d1b3ff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  display: block;
+}
+
+
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox */
+.flex-container {
+  margin: 0px 18px;
+  display: flex;
+  width: 100%;
+}
+
+.flex-container > div {
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  align-self: center;
+  width: auto;
+}
+
+.icon {
+    border: none;
+    display: inline-block;
+    border-radius: 8px;
+    position: relative;
+    font-size: 20px;
+    background: none;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
