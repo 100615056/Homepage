@@ -3,8 +3,12 @@
     padding: 0;
 }
 
+#nav {
+    background-color: #63034C;
+}
+
 body {
-    background-color: #00ffff;
+    background-color: #1A0363;
 }
 
 p {
@@ -20,7 +24,7 @@ img {
 
 
 .jumbotron {
-    background-color: #00ffff;
+    background-color: #E7E7E7;
 }
 
 /* Column class */
@@ -66,14 +70,14 @@ button {
 }
 
 /* Button Colors */
-.first {
+#skate {
     background-color: #000099;
 }
 
-.second {
-    background-color: #00264d;
+#dj {
+    background-color: #330066;
 }
 
-.third {
-     background-color: #330066;
+#rubik {
+     background-color: #004d00;
 }

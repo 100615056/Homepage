@@ -1,5 +1,9 @@
+#nav {
+    background-color: #63034C;
+}
+
 body {
-    background-color:#ADFF2F;
+    background-color: #00FFE5;
 }
 
 p {
@@ -7,7 +11,8 @@ p {
 }
 
 .jumbotron {
-    background-color: #008000;
+    background-color: #031C63;
+    color: white;
 }
 
 /* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
@@ -163,9 +168,9 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: #008000;
+  background-color: #031C63;
   padding: 30px 40px;
-  color: black;
+  color: white;
   text-align: center;
 }
 

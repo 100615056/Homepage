@@ -1,3 +1,7 @@
+#nav {
+    background-color: #63034C;
+}
+
 body {
     background-color: #c2c2f0;
 }
@@ -7,13 +11,13 @@ p {
 }
 
 .jumbotron {
-    background-color: #0000ff;
-    color: white;
+    background-color: #F0F0C2;
+    color: black;
 }
 
 /* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
 .accordion {
-    background-color: #6666ff;
+    background-color: #4C0080;
     color: #ffffff;
     cursor: pointer;
     padding: 18px;
