@@ -78,7 +78,8 @@ h2 {
     border: none;
     display: inline-block;
     border-radius: 8px;
-    position: relative;
+    vertical-align: central;
+    margin-bottom: 8px;
     /* Gradient source: https://codepen.io/thomasrye/pen/VaRoYv */
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
@@ -86,6 +87,7 @@ h2 {
     color: #fff;
 }
 
+/* Format Images */
 #items {
   margin: 10px 0px;
 }
@@ -93,9 +95,30 @@ h2 {
   margin: 10px;
   padding: 0;
 }
+
 #skate-gear h2 {
   text-align: center;
   display: block;
+}
+
+.sixty {
+  width: 60%;
+  height: 60%;
+}
+
+.seventy {
+  width: 70%;
+  height: 70%;
+}
+
+.eighty {
+  width: 80%;
+  height: 80%;
+}
+
+.ninety {
+  width: 90%;
+  height: 90%;
 }
 
 /* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo */

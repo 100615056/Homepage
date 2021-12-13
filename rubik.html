@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
+        <!-- Source: https://www.freefavicon.com/freefavicons/objects/iconinfo/rubiks-cube-152-214359.html -->
+        <link rel="shortcut icon" type="image/ico" href="rubik.svg">
         <!-- Required for Bootstrap -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <script src="themes/6/mcVideoPlugin.js" type="text/javascript"></script>
-        <script src="themes/6/js-image-slider.js" type="text/javascript"></script>
-        <link href="dj.css" rel="stylesheet">
+        <link href="rubik.css" rel="stylesheet">
+        <title>Rubik's Cube</title>
     </head>
     <body>
         <!-- Navbar Bootstrap Documentation https://getbootstrap.com/docs/5.1/components/navbar/#external-content-->
@@ -35,7 +35,6 @@
                 <h1>Rubik's Cube</h1>
                 <p>Check out the resources below to learn how to solve a Rubik's Cube!<br>
                 <p>See below for some cool rubik cubes!</p>
-                </p>
         </div>
         <!-- Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol -->
         <button class="accordion">Learn to Solve a Rubik's Cube</button>
@@ -44,63 +43,50 @@
             <div class="flex-container">
                 <div>
                     <h2>J Perm</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Ron6MN45LY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Ron6MN45LY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div>
                     <h2>Speed Cube Review</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eFFB0e2nABk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eFFB0e2nABk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
 
                 <div>
                     <h2>monkeydude1313</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U8Vmkvv_wCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/U8Vmkvv_wCI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
             </div>
         </div>
 
         <button class="accordion">Fun Rubik's Cubes to Solve</button>
         <div class="panel" id="gear">
-        <div class="flex-container">
-            <div class="row">
+        <div class="flex-container" id="items">
+            <div>
                 <!-- Source: https://m.media-amazon.com/images/I/81dIEAgoytL._AC_SL1500_.jpg -->
-                <h3>Classic - 3 X 3</h3>
-                <img src="three.jpg" width="60%" height="60%">
+                <h3>Classic - 3 X 3</h3> <br>
+                <img src="three.jpg" class="fourty" alt="classic cube">
             </div>
 
-            <div class="row">
+            <div>
                 <!-- Source: https://m.media-amazon.com/images/I/61zYD44Nb1L._AC_SL1500_.jpg -->
-                <h3>Speed</h3>
-                <img src="speed.jpg" width="70%" height="70%">
+                <h3>Speed</h3> <br>
+                <img src="speed.jpg" class="fourty" alt="classic speed cube">
             </div>
 
-            <div class="row">
+            <div>
                 <!-- Source: https://m.media-amazon.com/images/I/71TrvUl50OL.jpg -->
-                <h3>Mirror</h3>
-                <img src="mirror.jpg" width="70%" height="70%">
+                <h3>Mirror</h3> <br>
+                <img src="mirror.jpg" class="fourty" alt="mirror cube">
             </div>
 
-            <div class="row">
-                <!-- Source: http://twistypuzzles.com/museum/large/03437-01.jpg -->
-                <h3>Sphere</h3>
-                <img src="sphere.jpg" width="100%" height="100%">
-            </div>
-
-            <div class="row">
+            <div class="pyramid">
                 <!-- Source: https://m.media-amazon.com/images/I/61cJE0vAo1L._AC_SL1200_.jpg -->
-                <h3>Pyramid</h3>
-                <img src="pyramid.jpg" width="90%" height="90%">
-            </div>
-
-            <div class="row">
-                <!-- Source: https://i5.walmartimages.com/asr/b9af42d5-5ebc-4947-95b8-158642f07f17_1.535994e06378d33eb7114c1a32733b7f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF -->
-                <h3>Cylinder</h3>
-                <img src="cylinder.jpeg" width="100%" height="100%">
+                <h3>Pyramid</h3> <br>
+                <img src="pyramid.jpg" class="fifty" alt="pyramid cube">
             </div>
 
         </div>
         </div>
-        <script src="dj.js"></script>
-    </div>
-
+        <script src="rubik.js"></script>
     </body>
 </html>

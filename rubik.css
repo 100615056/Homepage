@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #c2c2f0;
+    background-color: #79ff4d;
 }
 
 p {
@@ -11,13 +11,13 @@ p {
 }
 
 .jumbotron {
-    background-color: #F0F0C2;
+    background-color: #e6ff99;
     color: black;
 }
 
 /* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
 .accordion {
-    background-color: #4C0080;
+    background-color: #008000;
     color: #ffffff;
     cursor: pointer;
     padding: 18px;
@@ -30,12 +30,12 @@ p {
 }
 
 .active, .accordion:hover {
-  background-color: #2e004d;
+  background-color: #004d00;
 }
 
 .accordion:after {
   content: '\002B'; /* Unicode for + */
-  color: #2e004d;
+  color: #79ff4d;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -47,7 +47,7 @@ p {
 
 /* Inside Panel */
 .panel {
-  background-color: #d1b3ff;
+  background-color: #99ff99;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -75,18 +75,42 @@ h2 {
   width: auto;
 }
 
-.icon {
-    border: none;
-    display: inline-block;
-    border-radius: 8px;
-    position: relative;
-    font-size: 20px;
-    background: none;
+h3 {
+  display: inline-block;
 }
 
-
+/* Format Images */
 img {
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#items {
+  display: flex;
+  margin-right: 0;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+}
+
+#items > div {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  align-self: flex-end;
+}
+
+.pyramid {
+  margin-right: 20px;
+}
+
+.fourty {
+  width: 40%;
+  height: 40%;
+}
+
+.fifty {
+  width: 50%;
+  height: 50%;
 }
