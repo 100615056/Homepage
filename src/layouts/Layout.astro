@@ -1,0 +1,51 @@
+---
+import Hero from '../components/Hero.astro'
+const {title} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>{title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<style global lang="scss">
+     @import '../styles/global';
+</style>
+<body>
+    <nav class="main-nav" aria-label="Main">
+        <div class="main-nav__title">My Hobbies</div>
+        <a href="#" class="main-nav__toggle-button">
+            <span class="main-nav__bar"></span>
+            <span class="main-nav__bar"></span>
+            <span class="main-nav__bar"></span>
+        </a>
+            <div class="main-nav__section">
+
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="/" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/skateboarding" class="main-nav__link"
+                        >Skateboarding</a
+                    >
+                </li>
+                <li class="main-nav__item">
+                    <a href="/dj" class="main-nav__link">DJing</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/rubik" class="main-nav__link">Rubik's Cube</a>
+                </li>
+            </ul>
+            </div>
+    </nav>
+<div class="container">
+    <h2>Testing Content</h2>
+</div>
+</body>
+<script src={Astro.resolve('../scripts/nav.js')}></script>
+</html>

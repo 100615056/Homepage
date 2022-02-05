@@ -1,0 +1,7 @@
+@use "../styles/" as *;
+@use "../styles/navbar.scss" as n;
+
+.container {
+    background-color: $teal;
+    border: solid 1px yellow;
+}
