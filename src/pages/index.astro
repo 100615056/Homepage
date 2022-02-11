@@ -2,9 +2,23 @@
 import Layout from '../layouts/Layout.astro'
 const title="My Hobbies"
 const topic="Favourite Activities"
-const sentence="This website contains information about some of my favourite activities to do. They are fun and challenging and a great way to reduce stress."
+const description="This website contains information about some of my favourite activities to do. <br> They are fun and challenging and a great way to reduce stress."
 ---
-<Layout title={title} />
+<Layout title={title} topic={topic} description={description}/>
+<link rel="shortcut icon" type="image/png" href={Astro.resolve('../../public/assets/hobby.png')}>
+<style lang="scss">
+     @import '../styles/home';
+</style>
 <main name="main">
-
+    <section class="skate">
+        <div class="container row">
+            <div class="skate__content">
+                <h2 class="skate__title">Skateboarding</h2>
+                <p class="skate__text"><p>Exciting sport that involves performing tricks or riding around. <br />
+                        Great for excercise and a great way to <b>constantly challenge the mind and body.</b></p>
+                <a class="btn skate__link" href="/skate">Learn Skateboarding</a>
+            </div>
+        <img class="skate__image" src={Astro.resolve('../../public/assets/skate.jpg')} alt="Andy Anderson grab out of bowl">
+        </div>
+    </section>
 </main>

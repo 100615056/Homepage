@@ -1,15 +1,28 @@
-@use "../styles/" as *;
+$font: "Raleway", sans-serif;
+$font-size: 16px;
+$header-font: "Roboto", sans-serif;
+$header-size: 3rem;
+$section-title: 2rem;
+$hero-clr: hsl(175, 92%, 95%);
+$nav-clr: hsl(178, 62%, 33%);
+$main-bg-clr: hsl(38, 51%, 90%);
+$main-text-clr: hsl(0, 0%, 0%);
+$header-clr: hsl(0, 0%, 100%);
+$button-clr: hsl(179, 100%, 33%);
+$max-width: 1100px;
 
 :root {
-    --font: "Raleway", sans-serif;
-    --font-size: 16px;
-    --header-size: 3rem;
-    --hero-clr: hsl(176, 45%, 88%);
-    --nav-clr: hsl(178, 62%, 33%);
-    --main-text-clr: hsl(0, 0%, 0%);
-    --header-clr: hsl(0, 0%, 100%);
-    --button-clr: hsl(214, 85%, 45%);
-    --max-width: 1100px;
+    --font: #{$font};
+    --font-size: #{$font-size};
+    --header-font: #{$header-font};
+    --header-size: #{$header-size};
+    --hero-clr: #{$hero-clr};
+    --nav-clr: #{$nav-clr};
+    --main-bg-clr: #{$main-bg-clr};
+    --main-text-clr: #{$main-text-clr};
+    --header-clr: #{$header-clr};
+    --button-clr: #{$button-clr};
+    --max-width: #{$max-width};
 }
 
 *,
@@ -30,14 +43,14 @@ img {
 }
 
 h1 {
-    font-size: var(--font-size);
-    margin-top: 0;
+    font-family: var(--header-font);
+    font-size: var(--header-size);
+    margin: 0;
 }
 
 .btn {
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
     color: var(--header-clr);
     font-weight: 900;
     background-color: var(--button-clr);
@@ -58,7 +71,6 @@ h1 {
 
 .row {
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
@@ -106,4 +118,11 @@ header {
     &__link:hover {
         color: var(--main-text-clr);
     }
+}
+
+// Hero Styles
+.hero {
+    padding: 50px 0;
+    background-color: var(--hero-clr);
+    color: var(--main-text-clr);
 }

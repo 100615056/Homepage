@@ -1,0 +1,24 @@
+@use "../styles/" as *;
+
+.skate {
+    background-color: $main-bg-clr;
+    padding-block: 2em;
+    // border: solid 2px lime;
+
+    &__content {
+        width: 60%;
+        // border: solid 1px red;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    &__title {
+        font-size: $section-title;
+        margin-top: 0;
+    }
+
+    &__image {
+        align-self: flex-start;
+        width: 40%;
+    }
+}

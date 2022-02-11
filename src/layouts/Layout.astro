@@ -1,5 +1,5 @@
 ---
-const {title, topic, sentence} = Astro.props;
+const {title, topic, description} = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +10,9 @@ const {title, topic, sentence} = Astro.props;
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
 <style global lang="scss">
      @import '../styles/global';
 </style>
@@ -36,7 +39,15 @@ const {title, topic, sentence} = Astro.props;
                 </nav>
             </div>
         </header>
-
+        <section class="hero">
+        <div class="container row">
+            <div class="hero__content">
+                <h1 class="hero__title">{topic}</h1>
+                <p class="hero__text">{description}</p>
+            </div>
+        </div>
+        </section>
+        <slot name="main" />
     
 </body>
 <script src={Astro.resolve('../scripts/nav.js')}></script>
