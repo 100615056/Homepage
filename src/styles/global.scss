@@ -1,7 +1,109 @@
 @use "../styles/" as *;
-@use "../styles/navbar.scss" as n;
+
+:root {
+    --font: "Raleway", sans-serif;
+    --font-size: 16px;
+    --header-size: 3rem;
+    --hero-clr: hsl(176, 45%, 88%);
+    --nav-clr: hsl(178, 62%, 33%);
+    --main-text-clr: hsl(0, 0%, 0%);
+    --header-clr: hsl(0, 0%, 100%);
+    --button-clr: hsl(214, 85%, 45%);
+    --max-width: 1100px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    font-size: var(--font-size);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: var(--font-size);
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--header-clr);
+    font-weight: 900;
+    background-color: var(--button-clr);
+    padding: 0.75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.75;
+}
 
 .container {
-    background-color: $teal;
-    border: solid 1px yellow;
+    width: 80%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.col {
+    width: 100%;
+}
+
+header {
+    background: var(--nav-clr);
+    padding: 0.5em 0;
+}
+
+// Navigation Styles
+.home {
+    margin-right: 1em;
+    color: var(--header-clr);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--main-text-clr);
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    &__item + &__item {
+        margin-left: 2em;
+    }
+
+    &__link {
+        color: var(--header-clr);
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: var(--main-text-clr);
+    }
 }

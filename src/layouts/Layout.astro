@@ -1,6 +1,5 @@
 ---
-import Hero from '../components/Hero.astro'
-const {title} = Astro.props;
+const {title, topic, sentence} = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,41 +10,34 @@ const {title} = Astro.props;
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-</head>
 <style global lang="scss">
      @import '../styles/global';
 </style>
+</head>
 <body>
-    <nav class="main-nav" aria-label="Main">
-        <div class="main-nav__title">My Hobbies</div>
-        <a href="#" class="main-nav__toggle-button">
-            <span class="main-nav__bar"></span>
-            <span class="main-nav__bar"></span>
-            <span class="main-nav__bar"></span>
-        </a>
-            <div class="main-nav__section">
-
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="/" class="main-nav__link">Home</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="/skateboarding" class="main-nav__link"
-                        >Skateboarding</a
-                    >
-                </li>
-                <li class="main-nav__item">
-                    <a href="/dj" class="main-nav__link">DJing</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="/rubik" class="main-nav__link">Rubik's Cube</a>
-                </li>
-            </ul>
+    <header>
+            <div class="container row">
+                <a href="/" class="home">My Hobbies</a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/skateboard" class="nav__link">Skateboarding</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/dj" class="nav__link">DJing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/rubik" class="nav__link">Rubik's Cube</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-    </nav>
-<div class="container">
-    <h2>Testing Content</h2>
-</div>
+        </header>
+
+    
 </body>
 <script src={Astro.resolve('../scripts/nav.js')}></script>
 </html>
