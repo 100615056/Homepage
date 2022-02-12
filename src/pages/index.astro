@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 const title="My Hobbies"
 const topic="Favourite Activities"
-const description="This website contains information about some of my favourite activities to do. <br> They are fun and challenging and a great way to reduce stress."
+const description="This website contains information about some of my favourite activities to do. <br> They are <b>fun and challenging </b>and a great way to reduce stress."
 ---
 <Layout title={title} topic={topic} description={description}/>
 <link rel="shortcut icon" type="image/png" href={Astro.resolve('../../public/assets/hobby.png')}>
@@ -10,15 +10,41 @@ const description="This website contains information about some of my favourite 
      @import '../styles/home';
 </style>
 <main name="main">
-    <section class="skate">
+    <section class="topic skate">
         <div class="container row">
-            <div class="skate__content">
-                <h2 class="skate__title">Skateboarding</h2>
-                <p class="skate__text"><p>Exciting sport that involves performing tricks or riding around. <br />
+            <div class="topic__content">
+                <h2 class="topic__title">Skateboarding</h2>
+                <p class="topic__text">Exciting sport that involves performing tricks or riding around. <br />
                         Great for excercise and a great way to <b>constantly challenge the mind and body.</b></p>
-                <a class="btn skate__link" href="/skate">Learn Skateboarding</a>
+                <a class="btn" href="/skate">Learn Skateboarding</a>
             </div>
-        <img class="skate__image" src={Astro.resolve('../../public/assets/skate.jpg')} alt="Andy Anderson grab out of bowl">
+        <img class="topic__image" src={Astro.resolve('../../public/assets/skate.jpg')} alt="Andy Anderson grab out of bowl">
+        </div>
+    </section>
+
+    <section class="topic dj">
+        <div class="container row">
+            <div class="topic__content">
+                <h2 class="topic__title">DJing</h2>
+                <p class="topic__text">Playing existing music for a live audience.<br />
+                        Variety of types, styles, equipment -
+                        <b>Gain musical knowledge</b></p>
+                <a class="btn" href="/dj">Learn DJing</a>
+            </div>
+        <img class="topic__image" src={Astro.resolve('../../public/assets/dj.jpg')} alt="Headphones on dj controller">
+        </div>
+    </section>
+
+    <section class="topic rubik">
+    <div class="container row">
+            <div class="topic__content">
+                <h2 class="topic__title">Rubik's Cube</h2>
+                <p class="topic__text">3-D Puzzle that can be solved by a series of turns and
+                        rotations of the cube.<br />
+                        Variety of types - <b>great for developing problem-solving skills and hand-eye coordination</b></p>
+                <a class="btn" href="/rubik">Solve the Rubik's Cube</a>
+            </div>
+        <img class="topic__image" src={Astro.resolve('../../public/assets/rubiks.jpg')} alt="Different size rubik's cubes">
         </div>
     </section>
 </main>

@@ -1,10 +1,14 @@
 @use "../styles/" as *;
 
-.skate {
-    background-color: $main-bg-clr;
+:root {
+    --section-title: #{$section-title};
+    --skate-bg-clr: #{$skate-bg-clr};
+    --dj-bg-clr: #{$dj-bg-clr};
+    --rbk-bg-clr: #{$rbk-bg-clr};
+}
+// Section Styles
+.topic {
     padding-block: 2em;
-    // border: solid 2px lime;
-
     &__content {
         width: 60%;
         // border: solid 1px red;
@@ -13,7 +17,7 @@
     }
 
     &__title {
-        font-size: $section-title;
+        font-size: var(--section-title);
         margin-top: 0;
     }
 
@@ -21,4 +25,18 @@
         align-self: flex-start;
         width: 40%;
     }
+}
+
+// Individual Styling
+.skate {
+    background-color: var(--skate-bg-clr);
+}
+
+.dj {
+    background-color: var(--dj-bg-clr);
+}
+
+.rubik {
+    background-color: var(--rbk-bg-clr);
+    color: white;
 }
