@@ -5,13 +5,14 @@ $header-size: 3rem;
 $section-title: 2rem;
 $hero-clr: hsl(175, 92%, 95%);
 $nav-clr: hsl(178, 62%, 33%);
-$skate-bg-clr: hsl(38, 51%, 90%);
-$dj-bg-clr: hsl(176, 15%, 64%);
-$rbk-bg-clr: hsl(178, 20%, 25%);
+$top-bg-clr: hsl(38, 51%, 90%);
+$mid-bg-clr: hsl(176, 15%, 64%);
+$btm-bg-clr: hsl(178, 20%, 25%);
 $main-text-clr: hsl(0, 0%, 0%);
 $header-clr: hsl(0, 0%, 100%);
 $button-clr: hsl(179, 100%, 33%);
-$max-width: 1100px;
+$home-max-width: 1100px;
+$skate-max-width: 1500px;
 
 :root {
     --font: #{$font};
@@ -23,7 +24,7 @@ $max-width: 1100px;
     --main-text-clr: #{$main-text-clr};
     --header-clr: #{$header-clr};
     --button-clr: #{$button-clr};
-    --max-width: #{$max-width};
+    --home-max-width: #{$home-max-width};
 }
 
 *,
@@ -49,6 +50,11 @@ h1 {
     margin: 0;
 }
 
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -66,7 +72,7 @@ h1 {
 
 .container {
     width: 80%;
-    max-width: var(--max-width);
+    max-width: var(--home-max-width);
     margin: 0 auto;
 }
 

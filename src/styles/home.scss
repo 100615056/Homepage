@@ -2,9 +2,10 @@
 
 :root {
     --section-title: #{$section-title};
-    --skate-bg-clr: #{$skate-bg-clr};
-    --dj-bg-clr: #{$dj-bg-clr};
-    --rbk-bg-clr: #{$rbk-bg-clr};
+    --header-font: #{$header-font};
+    --top-bg-clr: #{$top-bg-clr};
+    --mid-bg-clr: #{$mid-bg-clr};
+    --btm-bg-clr: #{$btm-bg-clr};
 }
 // Section Styles
 .topic {
@@ -17,6 +18,7 @@
     }
 
     &__title {
+        font-family: var(--header-font);
         font-size: var(--section-title);
         margin-top: 0;
     }
@@ -29,14 +31,14 @@
 
 // Individual Styling
 .skate {
-    background-color: var(--skate-bg-clr);
+    background-color: var(--top-bg-clr);
 }
 
 .dj {
-    background-color: var(--dj-bg-clr);
+    background-color: var(--mid-bg-clr);
 }
 
 .rubik {
-    background-color: var(--rbk-bg-clr);
+    background-color: var(--btm-bg-clr);
     color: white;
 }

@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro'
+const title="Skateboarding"
+const topic="Skateboarding"
+const description="Check out resources to learn skateboarding! <br> See below for some of my favourite gear and skateboard tricks to try!"
+---
+<Layout title={title} topic={topic} description={description}/>
+<style lang="scss">
+     @import '../styles/skate';
+</style>
+<link rel="shortcut icon" type="image/png" href={Astro.resolve('../../public/assets/skate.png')}>
+<script src={Astro.resolve('../scripts/skate.js')}></script>
+<main name="main">
+    <section class="channel">
+        <div class="container row">
+            <div class="topic__content">
+                <h2 class="topic__title">Skating with Aaron</h2>
+                <iframe src="https://www.youtube.com/embed/el2m37X7rHc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                Great beginner to intermediate tutorials.
+                </p>
+            </div>
+
+            <div class="topic__content">
+                <h2 class="topic__title">Sarah Park-Matott</h2>
+                <iframe src="https://www.youtube.com/embed/76cqrry3cz0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                Thorough tutorials in a variety of skating styles.
+                </p>
+            </div>
+
+            <div class="topic__content">
+                <h2 class="topic__title">Skate Skate</h2>
+                <iframe src="https://www.youtube.com/embed/oIg9bSregSE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                Great short, beginner videos.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="items">
+        <div class="container row">
+            <div class="gear">
+            <h2 class="gear__title">Deck - Death Wish Black Mamba</h2>
+            <img class="gear__img" src={Astro.resolve('../../public/assets/dw_mamba.png')} alt="skateboard deck with roses">
+            </div>
+
+            <div class="gear">
+            <h2 class="gear__title">Trucks - Independent Stage 11 Forged Hollow</h2>
+            <img class="gear__img" src={Astro.resolve('../../public/assets/indep-forged-hollow.png')} alt="skateboard trucks">
+            </div>
+
+            <div class="gear">
+            <h2 class="gear__title">Wheels - Mini Logo Hybrid A-Cut</h2>
+            <img class="gear__img" src={Astro.resolve('../../public/assets/mini-logo.jpg')} alt="small black wheel">
+            </div>
+
+            <div class="gear">
+            <h2 class="gear__title">Grip Tape - Grizzly</h2>
+            <img class="gear__img" src={Astro.resolve('../../public/assets/grizzly-grip.jpg')} alt="small black wheel">
+            </div>
+
+            <div class="gear">
+            <h2 class="gear__title">Bearings - Bones Reds</h2>
+            <img class="gear__img" src={Astro.resolve('../../public/assets/bones-red.jpg')} alt="small black wheel">
+            </div>
+        </div>
+    </section>
+
+    <section class="tricks">
+        
+    </section>
+</main>
