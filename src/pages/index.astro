@@ -5,7 +5,7 @@ const topic="Favourite Activities"
 const description="This website contains information about some of my favourite activities to do. <br> They are <b>fun and challenging </b>and a great way to reduce stress."
 ---
 <Layout title={title} topic={topic} description={description}/>
-<link rel="shortcut icon" type="image/png" href={Astro.resolve('../../public/assets/hobby.png')}>
+<link rel="shortcut icon" type="image/png" href='../../hobby.png' alt='home icon'>
 <style lang="scss">
     @import '../styles/home';
 </style>
@@ -19,7 +19,7 @@ const description="This website contains information about some of my favourite 
                 <a class="btn" href="/skate">Learn Skateboarding</a>
             </div>
         <!-- Img source: https://www.theglobeandmail.com/resizer/dGNqo9uydoXX-9eblRmmooAME9g=/1200x0/filters:quality(80):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/tgam/VOUJHQHTRNJWVHLS2Y2BFOO3TM.jpg-->
-        <img class="topic__image" src={Astro.resolve('../../public/assets/skate.jpg')} alt="Andy Anderson grab out of bowl">
+        <img class="topic__image" src='../../skate.jpg' alt='Andy Anderson grab out of bowl'>
         </div>
     </section>
 
@@ -33,7 +33,7 @@ const description="This website contains information about some of my favourite 
                 <a class="btn" href="/dj">Learn DJing</a>
             </div>
         <!-- Img source: https://theweeklytrends.com/wp-content/uploads/2019/11/zzz-2.jpg-->
-        <img class="topic__image" src={Astro.resolve('../../public/assets/dj.jpg')} alt="Headphones on dj controller">
+        <img class="topic__image" src='../../dj.jpg' alt='Headphones on dj controller'>
         </div>
     </section>
 
@@ -47,7 +47,7 @@ const description="This website contains information about some of my favourite 
                 <a class="btn" href="/rubik">Solve the Rubik's Cube</a>
             </div>
         <!-- Img source: https://ruwix.com/pics/rubiks-cube-patterns/rubiks-cube-puzzle-patterns.jpg-->
-        <img class="topic__image" src={Astro.resolve('../../public/assets/rubiks.jpg')} alt="Different size rubik's cubes">
+        <img class="topic__image" src='../../rubiks.jpg' alt="Different size rubik's cubes">
         </div>
     </section>
 </main>
