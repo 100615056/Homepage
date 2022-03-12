@@ -12,7 +12,6 @@ $main-text-clr: hsl(0, 0%, 0%);
 $header-clr: hsl(0, 0%, 100%);
 $button-clr: hsl(179, 100%, 33%);
 $home-max-width: 1100px;
-$skate-max-width: 1500px;
 
 :root {
     --font: #{$font};
@@ -79,10 +78,6 @@ iframe {
 .row {
     display: flex;
     gap: 30px;
-}
-
-.col {
-    width: 100%;
 }
 
 header {
