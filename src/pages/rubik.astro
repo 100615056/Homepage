@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro'
+const title="Rubik's Cube"
+const topic="Rubik's Cube"
+const description="Check out resources to learn how to solve a Rubik's Cube! <br> See below for some cool rubik cubes!"
+---
+<Layout title={title} topic={topic} description={description}/>
+<style lang="scss">
+    @import '../styles/topic';
+</style>
+<!-- Source: https://www.freefavicon.com/freefavicons/objects/iconinfo/rubiks-cube-152-214359.html -->
+<link rel="shortcut icon" type="image/png" href={Astro.resolve('../../public/assets/rubik.svg')}>
+<main name="main">
+    <section class="channel">
+        <div class="container row">
+            <div class="topic__content">
+                <h2 class="topic__title">J Perm</h2>
+                <iframe src="https://www.youtube.com/embed/7Ron6MN45LY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="topic__content">
+                <h2 class="topic__title">Speed Cube Review</h2>
+                <iframe src="https://www.youtube.com/embed/eFFB0e2nABk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="topic__content">
+                <h2 class="topic__title">monkeydude1313</h2>
+                <iframe src="https://www.youtube.com/embed/U8Vmkvv_wCI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="items">
+        <div class="container row">
+            <div class="item">
+            <!-- Source: https://m.media-amazon.com/images/I/81dIEAgoytL._AC_SL1500_.jpg -->
+            <h2 class="item__title">Classic - 3 X 3</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/three.jpg')} alt="classic cube">
+            </div>
+
+            <div class="item">
+            <!-- Source: https://m.media-amazon.com/images/I/61zYD44Nb1L._AC_SL1500_.jpg -->
+            <h2 class="item__title">Speed</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/speed.jpg')} alt="classic speed cube">
+            </div>
+
+            <div class="item">
+            <!-- Source: https://m.media-amazon.com/images/I/71TrvUl50OL.jpg -->
+            <h2 class="item__title">Mirror</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/mirror.jpg')} alt="mirror cube">
+            </div>
+
+            <div class="item">
+            <!-- Source: https://m.media-amazon.com/images/I/61cJE0vAo1L._AC_SL1200_.jpg -->
+            <h2 class="item__title">Pyramid</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/pyramid.jpg')} alt="pyramid cube">
+            </div>
+        </div>
+    </section>
+    </main>

@@ -2,14 +2,14 @@
 import Layout from '../layouts/Layout.astro'
 const title="Skateboarding"
 const topic="Skateboarding"
-const description="Check out resources to learn skateboarding! <br> See below for some of my favourite gear and skateboard tricks to try!"
+const description="Check out resources to learn skateboarding! <br> See below for some of my favourite item and skateboard tricks to try!"
 ---
 <Layout title={title} topic={topic} description={description}/>
 <style lang="scss">
-     @import '../styles/skate';
+    @import '../styles/topic';
 </style>
+<!-- Source: https://favicon.io/emoji-favicons/skateboard/ -->
 <link rel="shortcut icon" type="image/png" href={Astro.resolve('../../public/assets/skate.png')}>
-<script src={Astro.resolve('../scripts/skate.js')}></script>
 <main name="main">
     <section class="channel">
         <div class="container row">
@@ -36,40 +36,59 @@ const description="Check out resources to learn skateboarding! <br> See below fo
                 Great short, beginner videos.
                 </p>
             </div>
-
         </div>
     </section>
 
     <section class="items">
         <div class="container row">
-            <div class="gear">
-            <h2 class="gear__title">Deck - Death Wish Black Mamba</h2>
-            <img class="gear__img" src={Astro.resolve('../../public/assets/dw_mamba.png')} alt="skateboard deck with roses">
+            <div class="item">
+            <!-- Source: https://media.rainpos.com/11022/dw_mamba_1024x1024.png -->
+            <h2 class="item__title">Deck - Death Wish Black Mamba</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/dw_mamba.png')} alt="skateboard deck with roses">
             </div>
 
-            <div class="gear">
-            <h2 class="gear__title">Trucks - Independent Stage 11 Forged Hollow</h2>
-            <img class="gear__img" src={Astro.resolve('../../public/assets/indep-forged-hollow.png')} alt="skateboard trucks">
+            <div class="item">
+            <!-- Source: https://cdn.shopify.com/s/files/1/0162/0694/products/1_5a665d06-1603-457f-875d-52307cd1d701_1024x1024.jpg?v=1598381170 -->
+            <h2 class="item__title">Trucks - Independent Stage 11 Forged Hollow</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/indep-forged-hollow.png')} alt="skateboard trucks">
             </div>
 
-            <div class="gear">
-            <h2 class="gear__title">Wheels - Mini Logo Hybrid A-Cut</h2>
-            <img class="gear__img" src={Astro.resolve('../../public/assets/mini-logo.jpg')} alt="small black wheel">
+            <div class="item">
+            <!-- Source: https://d2or613lp2h38m.cloudfront.net/assets/minilogo/productimage/size/524x524/method/padding/v/95b6/WSBCMLAC25295X4.jpg -->
+            <h2 class="item__title">Wheels - Mini Logo Hybrid A-Cut</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/mini-logo.jpg')} alt="small black wheel">
             </div>
 
-            <div class="gear">
-            <h2 class="gear__title">Grip Tape - Grizzly</h2>
-            <img class="gear__img" src={Astro.resolve('../../public/assets/grizzly-grip.jpg')} alt="small black wheel">
+            <div class="item">
+            <!-- Source: https://cdn.shopify.com/s/files/1/1735/1547/products/grizzlygripblackcutout.jpg?v=1490203122 -->
+            <h2 class="item__title">Grip Tape - Grizzly</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/grizzly-grip.jpg')} alt="grip tape">
             </div>
 
-            <div class="gear">
-            <h2 class="gear__title">Bearings - Bones Reds</h2>
-            <img class="gear__img" src={Astro.resolve('../../public/assets/bones-red.jpg')} alt="small black wheel">
+            <div class="item">
+            <!-- Source: https://d27hrylgrpd01o.cloudfront.net/assets/bonesbearings/productimage/size/450x450/method/padding/v/5dea/BSACBR88.jpg -->
+            <h2 class="item__title">Bearings - Bones Reds</h2>
+            <img class="item__img" src={Astro.resolve('../../public/assets/bones-red.jpg')} alt="skate bearings">
             </div>
         </div>
     </section>
 
     <section class="tricks">
-        
+    <h2 class="tricks__title">Beginner Tricks to Try and Learn</h2>
+    <div class="container row">
+        <div class="skills">
+            <ul class="skills__list">
+                <li class="skills__item">Basic Riding - Pushing, Stopping, Turning</li>
+                <li class="skills__item">Hippie Jump</li>
+                <li class="skills__item">Caveman</li>
+                <li class="skills__item">Shove It</li>
+                <li class="skills__item">No Comply</li>
+                <li class="skills__item">Revert</li>
+                <li class="skills__item">Manual</li>
+                <li class="skills__item">Ollie</li>
+                <li class="skills__item">Pop-Shuv It</li>
+            </ul>
+        </div>
+    </div>
     </section>
 </main>

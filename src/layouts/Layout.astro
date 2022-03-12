@@ -14,7 +14,7 @@ const {title, topic, description} = Astro.props;
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
 <style global lang="scss">
-     @import '../styles/global';
+    @import '../styles/global';
 </style>
 </head>
 <body>
@@ -50,5 +50,4 @@ const {title, topic, description} = Astro.props;
         <slot name="main" />
     
 </body>
-<script src={Astro.resolve('../scripts/nav.js')}></script>
 </html>

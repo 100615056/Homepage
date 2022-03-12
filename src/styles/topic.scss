@@ -15,27 +15,44 @@
     background-color: var(--skate-bg-clr);
     text-align: center;
     padding-block: 2em;
-    // border: solid 2px yellow;
 }
 
 .topic__title {
     font-size: var(--section-title);
-    // border: solid 2px yellow;
 }
 
 .items {
     background-color: var(--mid-bg-clr);
 }
 
-.gear {
+.item {
     padding-block: 2em;
     display: flex;
     flex-direction: column;
+    &__title {
+        text-align: center;
+    }
     &__img {
         margin-top: auto;
     }
 }
 
 .tricks {
-    background-color: red;
+    background-color: var(--btm-bg-clr);
+    color: var(--header-clr);
+    padding: 1em;
+    &__title {
+        text-align: center;
+    }
+}
+
+.skills {
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        text-decoration: none;
+        list-style: square;
+        line-height: 2;
+    }
 }
